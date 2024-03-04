@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video to Text Converter</title>
+    <style>
+      body {
+        background-color: #2ac425;
+        font-family: Arial, sans-serif;
+        color: #36d128;
+      }
+      
+      h1 {
+        text-align: center;
+        font-size: 48px;
+        margin-top: 100px;
+      }
+      
+      form {
+        text-align: center;
+        margin-top: 50px;
+      }
+      h1 {
+  color: #0c0101; /* Change to your desired darker color */
+}
+      
+      input[type="file"] {
+        display: block;
+        margin: 0 auto;
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #fff;
+        color: #4b4b4b;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      input[type="submit"] {
+        display: block;
+        margin: 20px auto;
+        font-size: 24px;
+        padding: 10px 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: #59bfff;
+        color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #4ca9e0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Video to Text Converter</h1>
+    <form action="/convert" method="post" enctype="multipart/form-data">
+      <input type="file" name="video"><br><br>
+      <input type="submit" value="Convert">
+    </form>
+  </body>
+</html>
